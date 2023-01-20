@@ -7,6 +7,7 @@ var person = /** @class */ (function () {
     }
     // The class should have a method that takes a string as an argument and returns the person's name and address concatenated together.
     person.prototype.concatenated = function (seperatethis) {
+        // Use type annotations for the properties and method, and make sure to catch any errors that may occur when calling the method. 
         {
             if (typeof seperatethis !== "string") {
                 throw new Error("Separator must be a string");
@@ -20,4 +21,3 @@ var person = /** @class */ (function () {
 var person1 = new person("Seth", 21, "Japan");
 console.log(person1);
 console.log(person1.concatenated(", "));
-// Use type annotations for the properties and method, and make sure to catch any errors that may occur when calling the method.
